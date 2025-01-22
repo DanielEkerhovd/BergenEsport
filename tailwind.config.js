@@ -17,6 +17,9 @@ export default {
       backgroundImage: {
         herobg: "url('/src/assets/brg-bg.jpg')",
       },
+      spacing: {
+        head: "8rem",
+      },
     },
   },
   plugins: [],
