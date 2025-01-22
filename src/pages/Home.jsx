@@ -1,4 +1,19 @@
+import { useEffect, useState } from "react";
+
+
 export function Home() {
+
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFadeIn(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <>
       <section className="h-screen max-w-screen-xl mx-auto w-11/12 relative bg-black flex items-center justify-center">
@@ -27,9 +42,11 @@ export function Home() {
             </svg>
           </div>
         </div> */}
-        <div className="text-white z-10 flex flex-col gap-8 bg-red">
+        <div className={`text-white z-10 flex flex-col gap-8 bg-red transition-all duration-500 ${fadeIn ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
           <div className="flex flex-col gap-2 -ml-[2px]">
-            <h1 className="text-5xl sm:text-7xl font-bold -ml-[3px]">BERGEN E-SPORT</h1>
+            <h1 className="text-5xl sm:text-7xl font-bold -ml-[3px]">
+              BERGEN E-SPORT
+            </h1>
             <p className="text-xl sm:text-2xl font-light">
               Et community for gamere på Vestlandet
             </p>
