@@ -4,7 +4,7 @@ export function Home() {
       <section className="h-screen max-w-screen-xl mx-auto w-11/12 relative bg-black flex items-center justify-center">
         <img
           className="absolute w-full h-full object-cover"
-          src="/src/assets/brg-bg.jpg"
+          src="/assets/brg-bg.jpg"
           alt=""
         />
         <div className="absolute inset-0 bg-gradient-to-r from-hero-fade via-transparent to-hero-fade pointer-events-none"></div>

@@ -15,7 +15,7 @@ export default {
         "2xl": "1440px",
       },
       backgroundImage: {
-        herobg: "url('/src/assets/brg-bg.jpg')",
+        herobg: "url('/assets/brg-bg.jpg')",
       },
       spacing: {
         head: "8rem",

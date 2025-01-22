@@ -16,7 +16,7 @@ export function Header() {
     <header className="max-w-screen-xl w-full h-head z-50 absolute left-1/2 transform -translate-x-1/2">
       <div className="flex justify-between items-center h-full w-11/12 mx-auto">
         <NavLink to="/" className="size-14">
-          <img className="size-full" src="/src/assets/logo.png" alt="logo" />
+          <img className="size-full" src="/assets/logo.png" alt="logo" />
         </NavLink>
         <nav>
           {/* Desktop menu */}
@@ -74,7 +74,7 @@ export function Header() {
                 <NavLink to="/" className="size-14" onClick={() => setMenuOpen(false)}>
                   <img
                     className="size-full"
-                    src="/src/assets/logo.png"
+                    src="/assets/logo.png"
                     alt="logo"
                   />
                 </NavLink>
