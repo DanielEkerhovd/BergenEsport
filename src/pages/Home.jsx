@@ -18,7 +18,7 @@ export function Home() {
     <>
       <section className="h-screen max-w-screen-xl mx-auto w-11/12 relative bg-black flex items-center justify-center">
         <img
-          className="absolute w-full h-full object-cover"
+          className={`absolute w-full h-full object-cover transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
           src="/assets/brg-bg.jpg"
           alt=""
         />
