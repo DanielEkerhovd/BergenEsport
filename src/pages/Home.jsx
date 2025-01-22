@@ -18,9 +18,10 @@ export function Home() {
     <>
       <section className="h-screen max-w-screen-xl mx-auto w-11/12 relative bg-black flex items-center justify-center">
         <img
-          className={`absolute w-full h-full object-cover transition-opacity duration-500 ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute w-full h-full object-cover transition-opacity duration-500 unselectable ${fadeIn ? 'opacity-100' : 'opacity-0'}`}
           src="/assets/brg-bg.jpg"
           alt=""
+          draggable="false"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-hero-fade via-transparent to-hero-fade pointer-events-none"></div>
         {/* <div className="absolute bottom-5 flex flex-col items-center gap-2">

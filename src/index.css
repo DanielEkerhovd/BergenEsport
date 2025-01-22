@@ -1,6 +1,13 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
